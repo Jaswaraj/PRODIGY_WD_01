@@ -1,0 +1,62 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #141c31;
+}
+nav{
+    border-radius: 12px;
+    background: #FFF;
+    padding: 0 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.699);
+}
+.nav-content{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+.link-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    width: 95px;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.link-item:hover{
+    transform: translateY(-10px);
+}
+.link-icon{
+    font-size: 38px;
+    color: #999;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.link-item:hover .link-icon{
+    color: #4070F4;
+}
+.link-text{
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    color: #4070F4;
+    opacity: 0;
+    transform: translateY(32px);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.link-item:hover .link-text{
+    opacity: 1;
+}
